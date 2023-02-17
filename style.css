@@ -10,9 +10,9 @@ body {
   display: none;
 }
 .container {
-  width: 100%;
-  height: 100%;
-  background-color: #fff333;
+  position: absolute;
+  width: 1920px;
+  background-color: #ffea00;
   display: grid;
   align-items: center;
 }
@@ -23,43 +23,80 @@ body {
   height: 200px;
   text-align: center;
   font-size: 100px;
-  font-family: "indie flower", cursive;
+  font-family: "schoolbell", cursive;
   border-radius: 50%;
   background-image: url(polka.jpg);
-  margin-top: -1100px;
+  margin-top: -1000px;
   margin-left: 600px;
-  margin-bottom: 1000px;
-  animation: slide 2s cubic-bezier(1, 0, 0, 1) forwards;
+  margin-bottom: 950px;
+  animation: slide 3s cubic-bezier(1, 0, 0, 1) 400ms forwards;
 }
-a {
+.icFlav a {
   position: absolute;
   transform: translateX(-50%);
-  font-size: 20px;
+  font-size: 12px;
   border-radius: 50%;
   padding: 12px;
   text-decoration: none;
-  color: black;
+  color: #ffea00;
+  opacity: 0;
+  animation: textAppear 400ms cubic-bezier(1, 0, 0, 1) 3300ms forwards;
+  letter-spacing: 5px;
 }
-a:visited {
-  color: black;
+.icFlav a:visited {
+  color: #ffea00;
 }
-a:hover {
-  color: black;
+.icFlav a:hover {
+  color: #ffea00;
 }
-
+.body a {
+  position: absolute;
+  transform: translateX(-50%);
+  font-size: 12px;
+  border-radius: 50%;
+  padding: 12px;
+  text-decoration: none;
+  color: #ffea00;
+  opacity: 0;
+  animation: textAppear 400ms cubic-bezier(1, 0, 0, 1) 3300ms forwards;
+  letter-spacing: 5px;
+}
+@keyframes textAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes slide {
   0% {
     transform: scaleX(1);
     transform: translateX(0);
+    margin-bottom: 950px;
+  }
+  25% {
+    transform: translateX(0);
+    transform: scale(1);
+    margin-top: 1100px;
+    margin-bottom: 0px;
   }
   50% {
     transform: translateX(0);
     transform: scale(1);
-    margin-top: 1100px;
+    margin-top: 200px;
+    margin-bottom: -270px;
+  }
+  90% {
+    transform: translateX(0);
+    transform: scale(3);
+    margin-top: 214px;
+    margin-bottom: 1000px;
   }
   100% {
     transform: translateX(1000px);
     transform: scale(10);
     margin-top: 1100px;
+    margin-bottom: 1000px;
   }
 }
