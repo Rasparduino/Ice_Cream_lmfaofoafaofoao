@@ -54,9 +54,9 @@ body {
     margin-bottom: 85%;
   }
   100% {
-    transform: scale(8);
+    transform: scale(6);
     margin-top: 80%;
-    margin-bottom: 85%;
+    margin-bottom: 60%;
   }
 }
 a {
@@ -70,6 +70,12 @@ a {
   opacity: 0;
   animation: textAppear 1s cubic-bezier(1, 0, 0, 1) 3300ms forwards;
   letter-spacing: 1em;
+}
+#van {
+  margin-left: 18px;
+}
+#mint {
+  margin-left: 30px;
 }
 a:visited {
   color: #ffea00;

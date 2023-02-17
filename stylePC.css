@@ -25,7 +25,7 @@ body {
   background-color: black;
   border-radius: 50%;
   margin-top: -66%;
-  margin-left: 790px;
+  margin-left: 800px;
   margin-bottom: 60%;
   animation: slide 3s cubic-bezier(1, 0, 0, 1) 400ms forwards;
 }
@@ -54,12 +54,12 @@ body {
     margin-bottom: 85%;
   }
   100% {
-    transform: scale(10);
+    transform: scale(8);
     margin-top: 80%;
-    margin-bottom: 85%;
+    margin-bottom: 50%;
   }
 }
-#choc {
+a {
   position: absolute;
   transform: translateX(-68.5px);
   font-size: 8px;
@@ -76,6 +76,15 @@ a:visited {
 }
 a:hover {
   color: #ffea00;
+}
+#van {
+  margin-left: 14px;
+}
+#straw {
+  margin-left: -10px;
+}
+#mint {
+  margin-left: 28px;
 }
 @keyframes textAppear {
   0% {
