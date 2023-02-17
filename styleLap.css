@@ -25,13 +25,13 @@ body {
   background-color: black;
   border-radius: 50%;
   margin-top: -66%;
-  margin-left: 500px;
+  margin-left: 540px;
   margin-bottom: 60%;
   animation: slide 3s cubic-bezier(1, 0, 0, 1) 400ms forwards;
 }
 @keyframes slide {
   0% {
-    transform: scaleX(1);
+    transform: scale(1);
     transform: translateX(0);
     margin-bottom: 60%;
   }
@@ -54,8 +54,7 @@ body {
     margin-bottom: 85%;
   }
   100% {
-    transform: translateX(1000px);
-    transform: scale(10);
+    transform: scale(8);
     margin-top: 80%;
     margin-bottom: 85%;
   }

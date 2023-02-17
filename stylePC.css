@@ -54,7 +54,6 @@ body {
     margin-bottom: 85%;
   }
   100% {
-    transform: translateX(1000px);
     transform: scale(10);
     margin-top: 80%;
     margin-bottom: 85%;
