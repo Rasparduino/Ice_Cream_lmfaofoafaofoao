@@ -1,7 +1,4 @@
-*,
-*::before,
-*::before {
-  box-sizing: border-box;
+* {
   margin: 0;
   padding: 0;
 }
@@ -25,39 +22,12 @@ body {
   height: 300px;
   text-align: center;
   font-family: "indie flower", cursive;
-  background-image: url(./images/chock.svg);
-  background-size: 600px;
+  background-color: black;
   border-radius: 50%;
   margin-top: -66%;
-  margin-left: 44%;
+  margin-left: 790px;
   margin-bottom: 60%;
   animation: slide 3s cubic-bezier(1, 0, 0, 1) 400ms forwards;
-}
-a {
-  position: absolute;
-  transform: translateX(-50%);
-  font-size: 80%;
-  border-radius: 50%;
-  padding: 7%;
-  text-decoration: none;
-  color: #ffea00;
-  opacity: 0;
-  animation: textAppear 1s cubic-bezier(1, 0, 0, 1) 3300ms forwards;
-  letter-spacing: 20000px;
-}
-a:visited {
-  color: #ffea00;
-}
-a:hover {
-  color: #ffea00;
-}
-@keyframes textAppear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 @keyframes slide {
   0% {
@@ -74,8 +44,8 @@ a:hover {
   50% {
     transform: translateX(0);
     transform: scale(1);
-    margin-top: 8%;
-    margin-bottom: -15%;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
   90% {
     transform: translateX(0);
@@ -88,6 +58,32 @@ a:hover {
     transform: scale(10);
     margin-top: 80%;
     margin-bottom: 85%;
+  }
+}
+#choc {
+  position: absolute;
+  transform: translateX(-68.5px);
+  font-size: 8px;
+  border-radius: 50%;
+  padding: 7%;
+  text-decoration: none;
+  color: #ffea00;
+  opacity: 0;
+  animation: textAppear 1s cubic-bezier(1, 0, 0, 1) 3300ms forwards;
+  letter-spacing: 1em;
+}
+a:visited {
+  color: #ffea00;
+}
+a:hover {
+  color: #ffea00;
+}
+@keyframes textAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @keyframes bgAppear {

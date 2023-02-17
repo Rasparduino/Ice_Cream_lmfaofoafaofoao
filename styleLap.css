@@ -18,56 +18,51 @@ body {
 }
 .iCr {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   text-align: center;
   font-family: "indie flower", cursive;
   background-color: black;
   border-radius: 50%;
-  margin-top: -600px;
-  margin-left: 600px;
-  margin-bottom: 400px;
+  margin-top: -66%;
+  margin-left: 500px;
+  margin-bottom: 60%;
   animation: slide 3s cubic-bezier(1, 0, 0, 1) 400ms forwards;
 }
-
 @keyframes slide {
   0% {
-    transform: scale(1);
-    margin-top: -600px;
-    margin-bottom: 400px;
+    transform: scaleX(1);
+    transform: translateX(0);
+    margin-bottom: 60%;
   }
   25% {
+    transform: translateX(0);
     transform: scale(1);
     margin-top: 100%;
     margin-bottom: 0%;
   }
   50% {
+    transform: translateX(0);
     transform: scale(1);
-    margin-top: 0%;
-    margin-bottom: 0%;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
   90% {
+    transform: translateX(0);
     transform: scale(3);
     margin-top: 16%;
     margin-bottom: 85%;
   }
   100% {
+    transform: translateX(1000px);
     transform: scale(10);
     margin-top: 80%;
     margin-bottom: 85%;
   }
 }
-@keyframes textAppear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 a {
   position: absolute;
-  transform: translateX(-60px);
+  transform: translateX(-75px);
   font-size: 8px;
   border-radius: 50%;
   padding: 7%;
