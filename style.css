@@ -1,4 +1,7 @@
-* {
+*,
+*::before,
+*::before {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -12,25 +15,67 @@ body {
 .container {
   position: absolute;
   width: 1920px;
-  background-image: url(bg.png);
   display: grid;
   align-items: center;
+  background-image: url(./images/bg.png);
 }
-
-.icFlav {
+.iCr {
   position: relative;
   width: 300px;
   height: 300px;
   text-align: center;
   font-family: "indie flower", cursive;
+  background-image: url(./images/chock.svg);
+  background-size: 600px;
   border-radius: 50%;
-  background-image: url(polka.jpg);
   margin-top: -66%;
   margin-left: 44%;
   margin-bottom: 60%;
   animation: slide 3s cubic-bezier(1, 0, 0, 1) 400ms forwards;
 }
-.icFlav a {
+.iCr1 {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  font-family: "indie flower", cursive;
+  background-image: url(./images/straw.svg);
+  background-size: 600px;
+  border-radius: 50%;
+  margin-top: -66%;
+  margin-left: 44%;
+  margin-bottom: 60%;
+  animation: slide 3s cubic-bezier(1, 0, 0, 1) 400ms forwards;
+}
+.iCr2 {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  font-family: "indie flower", cursive;
+  background-image: url(./images/straw.svg);
+  background-size: 1000px;
+  border-radius: 50%;
+  margin-top: -66%;
+  margin-left: 44%;
+  margin-bottom: 60%;
+  animation: slide 3s cubic-bezier(1, 0, 0, 1) 400ms forwards;
+}
+.iCr3 {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  font-family: "indie flower", cursive;
+  background-image: url(./images/straw.svg);
+  background-size: 600px;
+  border-radius: 50%;
+  margin-top: -66%;
+  margin-left: 44%;
+  margin-bottom: 60%;
+  animation: slide 3s cubic-bezier(1, 0, 0, 1) 400ms forwards;
+}
+a {
   position: absolute;
   transform: translateX(-50%);
   font-size: 80%;
@@ -39,26 +84,14 @@ body {
   text-decoration: none;
   color: #ffea00;
   opacity: 0;
-  animation: textAppear 400ms cubic-bezier(1, 0, 0, 1) 3300ms forwards;
+  animation: textAppear 1s cubic-bezier(1, 0, 0, 1) 3300ms forwards;
   letter-spacing: 10px;
 }
-.icFlav a:visited {
+a:visited {
   color: #ffea00;
 }
-.icFlav a:hover {
+a:hover {
   color: #ffea00;
-}
-.body a {
-  position: absolute;
-  transform: translateX(-50%);
-  font-size: 12px;
-  border-radius: 50%;
-  padding: 12px;
-  text-decoration: none;
-  color: #ffea00;
-  opacity: 0;
-  animation: textAppear 400ms cubic-bezier(1, 0, 0, 1) 3300ms forwards;
-  letter-spacing: 5px;
 }
 @keyframes textAppear {
   0% {
@@ -97,5 +130,13 @@ body {
     transform: scale(10);
     margin-top: 80%;
     margin-bottom: 85%;
+  }
+}
+@keyframes bgAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
