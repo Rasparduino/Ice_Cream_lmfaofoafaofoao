@@ -11,9 +11,7 @@ body {
 }
 .container {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 1920px;
+  width: 1366px;
   display: grid;
   align-items: center;
   background-image: url(./images/bg.png);
@@ -25,47 +23,59 @@ body {
   text-align: center;
   font-family: "indie flower", cursive;
   background-color: black;
-  background-size: 600px;
   border-radius: 50%;
-  margin-top: 300px;
-  margin-left: 800px;
-  margin-bottom: 1000px;
+  margin-top: -600px;
+  margin-left: 600px;
+  margin-bottom: 400px;
   animation: slide 3s cubic-bezier(1, 0, 0, 1) 400ms forwards;
 }
 
 @keyframes slide {
   0% {
     transform: scale(1);
-    transform: translateY(0);
+    margin-top: -600px;
+    margin-bottom: 400px;
   }
   25% {
-    transform: translateY(0);
     transform: scale(1);
+    margin-top: 100%;
+    margin-bottom: 0%;
   }
   50% {
-    transform: translateY(0);
     transform: scale(1);
+    margin-top: 0%;
+    margin-bottom: 0%;
   }
   90% {
-    transform: translateY(0);
     transform: scale(3);
+    margin-top: 16%;
+    margin-bottom: 85%;
   }
   100% {
-    transform: translateY(-200px);
     transform: scale(10);
+    margin-top: 80%;
+    margin-bottom: 85%;
+  }
+}
+@keyframes textAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 a {
   position: absolute;
-  transform: translateX(-50px);
-  font-size: 80px;
+  transform: translateX(-60px);
+  font-size: 8px;
   border-radius: 50%;
   padding: 7%;
   text-decoration: none;
   color: #ffea00;
   opacity: 0;
   animation: textAppear 1s cubic-bezier(1, 0, 0, 1) 3300ms forwards;
-  letter-spacing: 10px;
+  letter-spacing: 1em;
 }
 a:visited {
   color: #ffea00;
