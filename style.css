@@ -12,36 +12,35 @@ body {
 .container {
   position: absolute;
   width: 1920px;
-  background-color: #ffea00;
+  background-image: url(bg.png);
   display: grid;
   align-items: center;
 }
 
 .icFlav {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   text-align: center;
-  font-size: 100px;
-  font-family: "schoolbell", cursive;
+  font-family: "indie flower", cursive;
   border-radius: 50%;
   background-image: url(polka.jpg);
-  margin-top: -1000px;
-  margin-left: 600px;
-  margin-bottom: 950px;
+  margin-top: -66%;
+  margin-left: 44%;
+  margin-bottom: 60%;
   animation: slide 3s cubic-bezier(1, 0, 0, 1) 400ms forwards;
 }
 .icFlav a {
   position: absolute;
   transform: translateX(-50%);
-  font-size: 12px;
+  font-size: 80%;
   border-radius: 50%;
-  padding: 12px;
+  padding: 7%;
   text-decoration: none;
   color: #ffea00;
   opacity: 0;
   animation: textAppear 400ms cubic-bezier(1, 0, 0, 1) 3300ms forwards;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
 }
 .icFlav a:visited {
   color: #ffea00;
@@ -73,30 +72,30 @@ body {
   0% {
     transform: scaleX(1);
     transform: translateX(0);
-    margin-bottom: 950px;
+    margin-bottom: 60%;
   }
   25% {
     transform: translateX(0);
     transform: scale(1);
-    margin-top: 1100px;
-    margin-bottom: 0px;
+    margin-top: 100%;
+    margin-bottom: 0%;
   }
   50% {
     transform: translateX(0);
     transform: scale(1);
-    margin-top: 200px;
-    margin-bottom: -270px;
+    margin-top: 8%;
+    margin-bottom: -15%;
   }
   90% {
     transform: translateX(0);
     transform: scale(3);
-    margin-top: 214px;
-    margin-bottom: 1000px;
+    margin-top: 16%;
+    margin-bottom: 85%;
   }
   100% {
     transform: translateX(1000px);
     transform: scale(10);
-    margin-top: 1100px;
-    margin-bottom: 1000px;
+    margin-top: 80%;
+    margin-bottom: 85%;
   }
 }
