@@ -15,7 +15,7 @@ body {
   display: grid;
   align-items: center;
   background-image: url(./images/bg.png);
-  transform: translate(0, -375px);
+  transform: translate(0, -400px);
 }
 .iCr {
   position: relative;
@@ -28,21 +28,24 @@ body {
   margin-top: 76%;
   margin-left: 500px;
   margin-bottom: 100%;
-  transform: translate(0, -11000px);
+  transform: translate(0, -11000px) rotate(360deg);
   animation: slide 5s cubic-bezier(1, 0, 0, 1) forwards;
 }
 @keyframes slide {
   0% {
-    transform: scale(1) translate(0, -11000px);
+    transform: scale(1) translate(0, -11000px) rotate(360deg);
+  }
+  25% {
+    transform: scale(1) translate(0, 500px) rotate(360deg);
   }
   50% {
-    transform: scale(1) translate(0, 500px);
+    transform: scale(2) translate(0, -250px) rotate(180deg);
   }
-  70% {
-    transform: scale(2) translate(0, -200px);
+  75% {
+    transform: translate(0, -600px) scale(8) rotate(90deg);
   }
   100% {
-    transform: translate(0, 800px) scale(8);
+    transform: translate(0, 800px) scale(8) rotate(0deg);
   }
 }
 #chock1 {
@@ -69,7 +72,7 @@ a {
   padding: 6%;
   text-decoration: none;
   opacity: 0;
-  animation: textAppear 500ms cubic-bezier(1, 0, 0, 1) 4400ms forwards;
+  animation: textAppear 500ms cubic-bezier(1, 0, 0, 1) 3900ms forwards;
   letter-spacing: 1.4em;
 }
 #chock {

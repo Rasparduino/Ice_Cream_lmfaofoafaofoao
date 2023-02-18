@@ -16,6 +16,7 @@ body {
   align-items: center;
   background-image: url(./images/bg.png);
   background-size: 1920px;
+  transform: translate(0, -175px);
 }
 .iCr {
   position: relative;
@@ -25,7 +26,7 @@ body {
   font-family: "indie flower", cursive;
   background-size: 300px;
   border-radius: 50%;
-  transform: translate(0, -14000px);
+  transform: translate(0, -14000px) rotate(360deg);
   margin-top: 49%;
   margin-left: 800px;
   margin-bottom: 100%;
@@ -34,16 +35,19 @@ body {
 
 @keyframes slide {
   0% {
-    transform: scale(1) translate(0, -14000px);
+    transform: scale(1) translate(0, -14000px) rotate(360deg);
+  }
+  25% {
+    transform: scale(1) translate(0, 500px) rotate(360deg);
   }
   50% {
-    transform: scale(1) translate(0, 500px);
+    transform: scale(2) translate(0, -230px) rotate(180deg);
   }
-  70% {
-    transform: scale(2) translate(0, -200px);
+  75% {
+    transform: translate(0, -600px) scale(8) rotate(90deg);
   }
   100% {
-    transform: translate(0, 800px) scale(8);
+    transform: translate(0, 800px) scale(8) rotate(0deg);
   }
 }
 #chock1 {
@@ -64,14 +68,14 @@ body {
 }
 a {
   position: absolute;
-  transform: translateX(-81px);
+  transform: translateX(-90px);
   font-size: 9px;
   border-radius: 50%;
-  padding: 7%;
+  padding: 9%;
   text-decoration: none;
   color: #ffea00;
   opacity: 0;
-  animation: textAppear 600ms cubic-bezier(1, 0, 0, 1) 4400ms forwards;
+  animation: textAppear 600ms cubic-bezier(1, 0, 0, 1) 3900ms forwards;
   letter-spacing: 1.2em;
 }
 a:visited {
@@ -81,18 +85,19 @@ a:hover {
   color: none;
 }
 #chock {
+  margin-left: 5px;
   color: #7cc4cc;
 }
 #van {
-  margin-left: 17px;
+  margin-left: 22px;
   color: #1e2e56;
 }
 #straw {
-  margin-left: -10px;
+  margin-left: -5px;
   color: #155833;
 }
 #mint {
-  margin-left: 37px;
+  margin-left: 42px;
   color: #d968a9;
 }
 @keyframes textAppear {
