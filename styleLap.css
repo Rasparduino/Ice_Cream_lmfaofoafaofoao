@@ -24,51 +24,52 @@ body {
   font-family: "indie flower", cursive;
   background-color: black;
   border-radius: 50%;
-  margin-top: -66%;
+  margin-top: 40%;
   margin-left: 540px;
-  margin-bottom: 60%;
-  animation: slide 3s cubic-bezier(1, 0, 0, 1) 400ms forwards;
+  margin-bottom: 150%;
+  transform: translate(0, -11000px);
+  animation: slide 2.5s cubic-bezier(1, 0, 0, 1) 400ms forwards;
 }
 @keyframes slide {
   0% {
-    transform: scale(1);
-    transform: translateX(0);
-    margin-bottom: 60%;
-  }
-  25% {
-    transform: translateX(0);
-    transform: scale(1);
-    margin-top: 100%;
-    margin-bottom: 0%;
+    transform: scale(1) translate(0, -11000px);
   }
   50% {
-    transform: translateX(0);
-    transform: scale(1);
-    margin-top: 0px;
-    margin-bottom: 0px;
+    transform: scale(1) translate(0, 500px);
   }
-  90% {
-    transform: translateX(0);
-    transform: scale(3);
-    margin-top: 16%;
-    margin-bottom: 85%;
+  70% {
+    transform: scale(2) translate(0, -200px);
   }
   100% {
-    transform: scale(6);
-    margin-top: 80%;
-    margin-bottom: 60%;
+    transform: translate(0, 800px) scale(8);
   }
+}
+#chock1 {
+  background-image: url(./images/chock.svg);
+  background-size: cover;
+}
+#van1 {
+  background-image: url(./images/van.svg);
+  background-size: cover;
+}
+#straw1 {
+  background-image: url(./images/straw.svg);
+  background-size: cover;
+}
+#mint1 {
+  background-image: url(./images/mint.svg);
+  background-size: cover;
 }
 a {
   position: absolute;
-  transform: translateX(-75px);
+  transform: translateX(-68.5px);
   font-size: 8px;
   border-radius: 50%;
   padding: 7%;
   text-decoration: none;
   color: #ffea00;
   opacity: 0;
-  animation: textAppear 1s cubic-bezier(1, 0, 0, 1) 3300ms forwards;
+  animation: textAppear 400ms cubic-bezier(1, 0, 0, 1) 2600ms forwards;
   letter-spacing: 1em;
 }
 #van {
@@ -84,14 +85,6 @@ a:hover {
   color: #ffea00;
 }
 @keyframes textAppear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes bgAppear {
   0% {
     opacity: 0;
   }

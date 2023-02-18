@@ -10,8 +10,8 @@ body {
   display: none;
 }
 .container {
-  position: absolute;
   width: 1920px;
+  position: absolute;
   display: grid;
   align-items: center;
   background-image: url(./images/bg.png);
@@ -24,11 +24,26 @@ body {
   font-family: "indie flower", cursive;
   background-size: 300px;
   border-radius: 50%;
-  margin-top: 50%;
+  transform: translate(0, -11000px);
+  margin-top: 40%;
   margin-left: 800px;
-  margin-bottom: 100%;
-  transform: translate(0, 1000px);
-  animation: slide 3s cubic-bezier(1, 0, 0, 1) 400ms forwards;
+  margin-bottom: 150%;
+  animation: slide 2.5s cubic-bezier(1, 0, 0, 1) 400ms forwards;
+}
+
+@keyframes slide {
+  0% {
+    transform: scale(1) translate(0, -11000px);
+  }
+  50% {
+    transform: scale(1) translate(0, 500px);
+  }
+  70% {
+    transform: scale(2) translate(0, -200px);
+  }
+  100% {
+    transform: translate(0, 800px) scale(8);
+  }
 }
 #chock1 {
   background-image: url(./images/chock.svg);
@@ -44,34 +59,17 @@ body {
   background-image: url(./images/mint.svg);
   background-size: 300px;
 }
-@keyframes slide {
-  0% {
-    transform: scale(1);
-    transform: translate(0, 1000px);
-  }
-  50% {
-    transform: scale(1);
-    transform: translate(0, 1100px);
-  }
-  70% {
-    transform: scale(1);
-    transform: translate(0, 1100px);
-  }
-  100% {
-    transform: translate(0, 1100px) scale(10);
-  }
-}
 a {
   position: absolute;
-  transform: translateX(-68.5px);
-  font-size: 8px;
+  transform: translateX(-81px);
+  font-size: 9px;
   border-radius: 50%;
   padding: 7%;
   text-decoration: none;
   color: #ffea00;
   opacity: 0;
   animation: textAppear 600ms cubic-bezier(1, 0, 0, 1) 2200ms forwards;
-  letter-spacing: 1em;
+  letter-spacing: 1.2em;
 }
 a:visited {
   color: #ffea00;
