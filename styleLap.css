@@ -67,22 +67,31 @@ a {
   border-radius: 50%;
   padding: 7%;
   text-decoration: none;
-  color: #ffea00;
   opacity: 0;
   animation: textAppear 400ms cubic-bezier(1, 0, 0, 1) 2600ms forwards;
   letter-spacing: 1em;
 }
+#chock {
+  margin-left: 0px;
+  color: #7cc4cc;
+}
 #van {
-  margin-left: 18px;
+  margin-left: 14px;
+  color: #1e2e56;
+}
+#straw {
+  margin-left: -7px;
+  color: #155833;
 }
 #mint {
-  margin-left: 30px;
+  margin-left: 25px;
+  color: #c68acc;
 }
 a:visited {
-  color: #ffea00;
+  color: none;
 }
 a:hover {
-  color: #ffea00;
+  color: none;
 }
 @keyframes textAppear {
   0% {

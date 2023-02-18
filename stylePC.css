@@ -47,9 +47,11 @@ body {
 }
 #chock1 {
   background-image: url(./images/chock.svg);
+  background-size: cover;
 }
 #van1 {
   background-image: url(./images/van.svg);
+  background-size: cover;
 }
 #straw1 {
   background-image: url(./images/straw.svg);
@@ -57,7 +59,7 @@ body {
 }
 #mint1 {
   background-image: url(./images/mint.svg);
-  background-size: 300px;
+  background-size: cover;
 }
 a {
   position: absolute;
@@ -72,19 +74,26 @@ a {
   letter-spacing: 1.2em;
 }
 a:visited {
-  color: #ffea00;
+  color: none;
 }
 a:hover {
-  color: #ffea00;
+  color: none;
+}
+#chock {
+  margin-left: -10px;
+  color: #7cc4cc;
 }
 #van {
   margin-left: 14px;
+  color: #1e2e56;
 }
 #straw {
   margin-left: -10px;
+  color: #155833;
 }
 #mint {
   margin-left: 28px;
+  color: #c68acc;
 }
 @keyframes textAppear {
   0% {
