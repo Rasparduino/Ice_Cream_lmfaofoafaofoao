@@ -15,6 +15,7 @@ body {
   display: grid;
   align-items: center;
   background-image: url(./images/bg.png);
+  transform: translate(0, -375px);
 }
 .iCr {
   position: relative;
@@ -24,11 +25,11 @@ body {
   font-family: "indie flower", cursive;
   background-color: black;
   border-radius: 50%;
-  margin-top: 40%;
-  margin-left: 540px;
-  margin-bottom: 150%;
+  margin-top: 76%;
+  margin-left: 500px;
+  margin-bottom: 100%;
   transform: translate(0, -11000px);
-  animation: slide 2.5s cubic-bezier(1, 0, 0, 1) 400ms forwards;
+  animation: slide 5s cubic-bezier(1, 0, 0, 1) forwards;
 }
 @keyframes slide {
   0% {
@@ -63,13 +64,13 @@ body {
 a {
   position: absolute;
   transform: translateX(-68.5px);
-  font-size: 8px;
+  font-size: 7px;
   border-radius: 50%;
-  padding: 7%;
+  padding: 6%;
   text-decoration: none;
   opacity: 0;
-  animation: textAppear 400ms cubic-bezier(1, 0, 0, 1) 2600ms forwards;
-  letter-spacing: 1em;
+  animation: textAppear 500ms cubic-bezier(1, 0, 0, 1) 4400ms forwards;
+  letter-spacing: 1.4em;
 }
 #chock {
   margin-left: 0px;
